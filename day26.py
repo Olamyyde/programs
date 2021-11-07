@@ -40,7 +40,7 @@ print(student_scores)
 passed_students = {student:score for (student,score) in student_scores.items() if score>40}
 print(passed_students)
 
-# Splitting a word, orint it and the index with a list comprehension
+# Splitting a word, print it and the index with a list comprehension
 sentence = "say what you wanna say"
 
 result = {word:len(word) for word in sentence.split()}
