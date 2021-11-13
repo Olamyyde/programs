@@ -32,7 +32,7 @@ window.config(padx=100, pady=50, bg=YELLOW)
 
 
 
-canvas = Canvas(width=200, height=224, bg=YELLOW, highlightthickness=0)
+canvas = Canvas(width=200, height=224, bg=YELLOW, highlightthickness=0) #Creates Canvas
 canvas.grid(column=1, row=1)
 tomato_img = PhotoImage(file=r"C:\Users\Public\Pictures\cat.png")
 # tomato_img = ImageTk.PhotoImage(Image.open(r"C:\Users\Public\Pictures\cat.png"))
@@ -45,11 +45,11 @@ canvas.grid(column=1, row=1)
 my_lab = Label(text="Timer", fg=GREEN, bg=YELLOW, font=(FONT_NAME, 35))
 my_lab.grid(column=1, row=0)
 
-start_btn = Button(text="start", highlightthickness=0)
-b1.grid(column=0, row=2)
+start_btn = Button(text="start", highlightthickness=0, command=start_timer)
+start_btn.grid(column=0, row=2)
 
 reset_btn = Button(text="reset", highlightthickness=0)
-b2.grid(column=2, row=2)
+start_btn.grid(column=2, row=2)
 
 
 
