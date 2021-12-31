@@ -34,9 +34,9 @@ window.config(padx=100, pady=50, bg=YELLOW)
 
 canvas = Canvas(width=200, height=224, bg=YELLOW, highlightthickness=0) #Creates Canvas
 canvas.grid(column=1, row=1)
-tomato_img = PhotoImage(file=r"C:\Users\Public\Pictures\cat.png")
+# tomato_img = PhotoImage(file="cat.png")
 # tomato_img = ImageTk.PhotoImage(Image.open(r"C:\Users\Public\Pictures\cat.png"))
-canvas.create_image(100, 112, image="tomato_img")
+# canvas.create_image(100, 112, image="tomato_img")
 
 timer_text = canvas.create_text(103, 112, text="00:00", fill="white", font=(FONT_NAME, 35, "bold"))
 canvas.grid(column=1, row=1)
